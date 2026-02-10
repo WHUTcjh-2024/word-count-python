@@ -1,27 +1,24 @@
-# word_count
+Word Count 项目
 
-A minimal Python project that counts word frequencies from a text file and prints the Top-N results.
+这是一个用于词频统计的 Python 项目，旨在展示如何通过良好的项目结构、模块化设计以及基础测试来构建一个小型的文本处理应用。该项目适用于自然语言处理（NLP）入门，支持文本文件读取、简单的分词、词频统计和结果展示。
 
-## Features
-- Generator-based file reading (memory efficient)
-- Simple tokenizer
-- Clean project structure (ready for GitHub)
+🚀 项目特点
 
-## How to Run
-```bash
-python -m word_count.main
-```
+1.文本文件读取：使用生成器逐行读取文件，避免内存溢出。
+2.简单的文本分词：通过正则表达式提取单词，支持英文字母和数字。
+3.词频统计：基于 'collections.Counter' 高效地计算文本中每个单词出现的频率。
+4.模块化设计：项目按照功能拆分为多个模块，便于扩展和维护。
+5.基本单元测试：通过 'unittest' 测试框架进行基础功能验证。
+6.可扩展：支持未来的功能扩展，例如停用词过滤、TF-IDF 计算等。
 
-## Project Structure
-```
-word_count/
-├─ word_count/
-│  ├─ __init__.py
-│  ├─ core.py
-│  └─ main.py
-├─ tests/
-│  └─ test_core.py
-├─ sample.txt
-├─ requirements.txt
-└─ README.md
-```
+👤 作者
+
+这是一个基于 Python 学习的项目，作者是一名正在学习计算机科学与人工智能的学生。项目旨在通过实际编码来加深对 Python 基础、数据结构与算法的理解。
+
+🧠 项目核心概念
+
+1.Python 包与模块：通过将功能划分为多个模块，使项目更易于维护与扩展。
+2.生成器函数：'read_lines()' 使用生成器逐行读取文件，节省内存。
+3.文本处理：使用正则表达式进行文本分词，并对文本进行小写化处理，去除标点符号。
+4.集合计数：利用 'collections.Counter' 对词频进行统计，输出出现频率最高的单词。
+5.单元测试：使用 'unittest''测试框架验证 'tokenize()' 和其他核心功能的正确性。
